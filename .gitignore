@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 **.python-version
+**.csv
 
 # Distribution / packaging
 .Python
