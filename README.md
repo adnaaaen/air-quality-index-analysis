@@ -4,11 +4,11 @@
 >
 >**You must download the dataset before running notebooks.**
 >
->To download the dataset, run the script located at `/scripts/download_data.py`.
+>To download the dataset, run the script located at `scripts/download_data.py`.
 >
 >You can execute the script by running:
 > ```
-> py /scripts/download_data.py
+> python scripts/download_data.py
 > ```
 
 ```
@@ -16,6 +16,8 @@ Directory structure:
 └── air-quality-index-analysis/
     ├── scripts/
     │   └── download_data.py
+    ├── notebooks/
+    │   └── 01_data_cleaning.ipynb
     ├── data/
     │   └── raw/
     │       └── README.md
