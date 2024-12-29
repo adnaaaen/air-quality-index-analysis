@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=60&pause=2000&color=F7F7F7&width=1000&height=100&lines=Air+Quality+Index+Analysis;An+End-to-End+ML+Application)](https://www.linkedin.com/in/adnaaaen/)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=80&pause=2000&color=F7F7F7&width=1000&height=100&lines=Air+Quality+Index+Analysis;An+End-to-End+ML+Application)](https://www.linkedin.com/in/adnaaaen/)
 
 >[!NOTE]
 >
@@ -18,6 +18,7 @@ Directory structure:
     │   └── download_data.py
     ├── notebooks/
     │   └── 01_data_cleaning.ipynb
+    │   └── 02_eda.ipynb
     ├── data/
     │   └── raw/
     │       └── README.md
