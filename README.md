@@ -18,6 +18,7 @@ Directory structure:
     │   └── download_data.py
     ├── notebooks/
     │   └── 01_data_cleaning.ipynb
+    │   └── 02_eda.ipynb
     ├── data/
     │   └── raw/
     │       └── README.md
