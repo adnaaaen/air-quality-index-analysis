@@ -17,12 +17,17 @@ Directory structure:
     ├── scripts/
     │   └── download_data.py
     ├── notebooks/
+    │   ├── 03_preprocessing.ipynb
+    │   ├── 02_eda.ipynb
     │   └── 01_data_cleaning.ipynb
-    │   └── 02_eda.ipynb
     ├── data/
     │   └── raw/
     │       └── README.md
     ├── requirements.txt
+    ├── model/
+    │   └── encoders/
+    │       ├── standard_scaler.joblib
+    │       └── binary_encoder.joblib
     ├── LICENSE
     └── README.md
 ```
