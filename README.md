@@ -17,10 +17,10 @@ Directory structure:
     ├── scripts/
     │   └── download_data.py
     ├── notebooks/
-    │   ├── 03_preprocessing.ipynb
+    │   ├── 01_data_cleaning.ipynb
     │   ├── 02_eda.ipynb
-    │   ├── 04_model_building.ipynb
-    │   └── 01_data_cleaning.ipynb
+    │   ├── 03_preprocessing.ipynb
+    │   └── 04_model_building.ipynb
     ├── data/
     │   └── raw/
     │       └── README.md
