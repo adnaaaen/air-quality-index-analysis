@@ -19,15 +19,18 @@ Directory structure:
     ├── notebooks/
     │   ├── 03_preprocessing.ipynb
     │   ├── 02_eda.ipynb
+    │   ├── 04_model_building.ipynb
     │   └── 01_data_cleaning.ipynb
     ├── data/
     │   └── raw/
     │       └── README.md
     ├── requirements.txt
     ├── model/
-    │   └── encoders/
-    │       ├── standard_scaler.joblib
-    │       └── binary_encoder.joblib
+    │   ├── encoders/
+    │   │   ├── standard_scaler.joblib
+    │   │   └── binary_encoder.joblib
+    │   └── trained/
+    │       └── linear_regression_model.joblib
     ├── LICENSE
     └── README.md
 ```
