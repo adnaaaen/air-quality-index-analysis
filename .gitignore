@@ -8,6 +8,7 @@ __pycache__/
 
 **.python-version
 **.csv
+!**/uploads/*.csv
 
 # Distribution / packaging
 .Python

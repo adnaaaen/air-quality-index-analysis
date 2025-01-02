@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <title>{% block title %} {% endblock %} | AQI</title>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div>
+        <p>🔍</p>
+      </div>
+      <div>
+        <nav>
+          <a
+            href="{{ url_for('api.home') }}"
+            class="nav-link {{ 'active' if request.path == '/home/' else '' }}"
+            >home</a
+          >
+          <a
+            href="{{ url_for('api.model') }}"
+            class="nav-link {{ 'active' if request.path == '/model/' else '' }}"
+            >model</a
+          >
+          <a
+            href="{{ url_for('api.about') }}"
+            class="nav-link {{ 'active' if request.path == '/about/' else '' }}"
+            >about</a
+          >
+        </nav>
+      </div>
+    </header>
+    <div class="page-title">{% block heading %}{% endblock %}</div>
+    <section class="content">{% block content %}{% endblock %}</section>
+    <footer>{% block footer %}{% endblock %}</footer>
+  </body>
+</html>
