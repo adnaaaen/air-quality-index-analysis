@@ -17,17 +17,17 @@
       <div>
         <nav>
           <a
-            href="{{ url_for('home') }}"
+            href="{{ url_for('api.home') }}"
             class="nav-link {{ 'active' if request.path == '/home/' else '' }}"
             >home</a
           >
           <a
-            href="{{ url_for('model') }}"
+            href="{{ url_for('api.model') }}"
             class="nav-link {{ 'active' if request.path == '/model/' else '' }}"
             >model</a
           >
           <a
-            href="{{ url_for('about') }}"
+            href="{{ url_for('api.about') }}"
             class="nav-link {{ 'active' if request.path == '/about/' else '' }}"
             >about</a
           >

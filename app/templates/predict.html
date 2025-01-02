@@ -4,14 +4,14 @@
 {% block content %}
 
 <div class="container">
-    <form action="{{ url_for('download_csv_template') }}" method="post">
+    <form action="{{ url_for('core.download_csv_template') }}" method="post">
         <label for="">Download the CSV template file to view the required features. After downloading, fill in the required inputs directly in the file and upload it back once completed.</label>
         <input type="submit" value="Download" class="primary-button">
     </form>
 </div>
 
 <div class="container" style="border: 1px solid rgb(213, 211, 211); border-radius: 3px; padding: 20px;">
-    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data" class="space-between-container">
+    <form action="{{ url_for('core.upload') }}" method="post" enctype="multipart/form-data" class="space-between-container">
         <div>
             <label for="csv">Choose csv file to upload </label>
             <input type="file" name="csv" id="csv">

@@ -3,7 +3,7 @@
 {% block heading %}Model{% endblock %}
 {% block content %}
 <div class="container" style="align-items: end;">
-   <form action="{{ url_for('predict') }}" method="get">
+   <form action="{{ url_for('api.predict') }}" method="get">
       <input type="submit" value="Predict" class="primary-button">
    </form>
 </div>
