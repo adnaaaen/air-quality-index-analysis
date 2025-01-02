@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %} Predict {% endblock %}
+{% block heading %} Predict AQI {% endblock %}
+{% block content %}
+
+<div class="container">
+    <form action="{{ url_for('download_csv_template') }}" method="post">
+        <label for="">Download the CSV template file to view the required features. After downloading, fill in the required inputs directly in the file and upload it back once completed.</label>
+        <input type="submit" value="Download" class="primary-button">
+    </form>
+</div>
+
+<div class="container" style="border: 1px solid rgb(213, 211, 211); border-radius: 3px; padding: 20px;">
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data" class="space-between-container">
+        <div>
+            <label for="csv">Choose csv file to upload </label>
+            <input type="file" name="csv" id="csv">
+        </div>
+        <input type="submit" value="Get Predict" class="primary-button">
+    </form>
+</div>
+
+<div class="container" style="align-items: center;">
+    {% if prediction %}
+    <ul>
+        {% for pre in prediction %}
+            <li>{{ pre }}</li>
+            {% endfor %}
+    </ul>
+    {% else %}
+    <p class="page-placeholder">upload file to get prediction :)</p>
+    {% endif %}
+</div>
+{% endblock %}

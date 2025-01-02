@@ -8,14 +8,10 @@
     font-style: normal;
     background-color: black;
     color: white;
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), 
-                    url("https://cdn.pixabay.com/photo/2020/01/15/09/34/co2-4767440_1280.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 
 footer{
+    letter-spacing: 2px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -34,14 +30,14 @@ body{
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
-    background-color: rgba(146, 145, 145, 0.080);
+    border-bottom: 1px solid  rgb(49, 49, 49);
     padding: 10px;
     height: 30px;
     user-select: none;
 }
 
 .nav-bar nav{
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -49,23 +45,82 @@ body{
 .nav-link{
     color: rgba(255, 255, 255, 0.64);
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .nav-link:hover, .active{
     color: white;
-    font-weight: bold;
     text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    min-width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.space-between-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.image-container{
+    user-select: none;
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    transition: 0.3s;
 }
 
 .content{
     display: flex;
     justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
     flex-direction: column;
 }
 
 .page-title{
-    font-size: 40px;
-    font-weight: bold;
-    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(234, 232, 232);
+    letter-spacing: 5px;
+    text-align: center;
     user-select: none;
+}
+
+.primary-button{
+    background-color: rgb(226, 224, 224);
+    color: black;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.2s;
+    outline: none;
+    position: sticky;
+}
+
+.primary-button:hover{
+    background-color: rgb(253, 253, 253);
+
+}
+
+.page-placeholder{
+    color: rgb(110, 109, 109);
+    font-size: 22px;
 }

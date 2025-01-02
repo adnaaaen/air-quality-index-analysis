@@ -1,16 +1,30 @@
 {% extends 'base.html' %}
-
 {% block title %} Home {% endblock %}
-
 {% block content %}
-<div class="page-title">
-    AIR QUALITY INDEX 
+<div class="space-between-container">
+    <div class="container">
+        <h3>What is AQI (Air Quality Index)?</h3>
+        <p>The Air Quality Index (AQI) is a measure used to communicate how polluted the air currently is or how polluted it is forecast to become. It is designed to inform the public about air quality and its potential impact on health.</p>
+    </div>
+    <div class="container">
+    <img src="{{ url_for('static', filename='images/img-1.jpg') }}" alt="img" class="image-container">
+    </div>
 </div>
-<div>
-    <ul>
-        <li>nice</li>
-        <li>amazing</li>
-        <li>super</li>
-    </ul>
+<div class="container">
+<table>
+    <tr>
+        <th colspan="6">Categories</th>
+    </tr>
+    <tr>
+        <td>Good (0–50)</td>
+        <td>Moderate (51–100)</td>
+        <td>Unhealthy for Sensitive Groups (101–150)</td>
+        <td>Unhealthy (151–200)</td>
+        <td>Very Unhealthy (201–300)</td>
+        <td>Hazardous (301–500)</td>
+    </tr>
+</table>
+
+<p style="color: rgb(184, 182, 182); text-align: center;">Keep an eye on AQI levels to breathe easy and stay healthy!</p>
 </div>
 {% endblock %}
