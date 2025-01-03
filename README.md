@@ -14,23 +14,50 @@
 ```
 Directory structure:
 └── air-quality-index-analysis/
-    ├── scripts/
-    │   └── download_data.py
+    ├── README.md
+    ├── LICENSE
+    ├── requirements.txt
+    ├── run.py
+    ├── app/
+    │   ├── __init__.py
+    │   ├── config/
+    │   │   ├── __init__.py
+    │   │   └── paths.py
+    │   ├── routes/
+    │   │   ├── __init__.py
+    │   │   ├── api.py
+    │   │   └── core.py
+    │   ├── static/
+    │   │   ├── css/
+    │   │   │   └── style.css
+    │   │   └── images/
+    │   ├── templates/
+    │   │   ├── 404.html
+    │   │   ├── about.html
+    │   │   ├── base.html
+    │   │   ├── home.html
+    │   │   ├── model.html
+    │   │   └── predict.html
+    │   ├── uploads/
+    │   │   └── aqi_input_template.csv
+    │   └── utils/
+    │       ├── __init__.py
+    │       └── model_prediction.py
+    ├── data/
+    │   └── raw/
+    │       └── README.md
+    ├── model/
+    │   ├── encoders/
+    │   │   ├── binary_encoder.joblib
+    │   │   └── standard_scaler.joblib
+    │   └── trained/
+    │       └── linear_regression_model.joblib
     ├── notebooks/
     │   ├── 01_data_cleaning.ipynb
     │   ├── 02_eda.ipynb
     │   ├── 03_preprocessing.ipynb
     │   └── 04_model_building.ipynb
-    ├── data/
-    │   └── raw/
-    │       └── README.md
-    ├── requirements.txt
-    ├── model/
-    │   ├── encoders/
-    │   │   ├── standard_scaler.joblib
-    │   │   └── binary_encoder.joblib
-    │   └── trained/
-    │       └── linear_regression_model.joblib
-    ├── LICENSE
-    └── README.md
+    └── scripts/
+        └── download_data.py
+
 ```
