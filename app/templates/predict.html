@@ -22,11 +22,11 @@
 
 <div class="container" style="align-items: center;">
     {% if prediction %}
-    <ul>
-        {% for pre in prediction %}
-            <li>{{ pre }}</li>
-            {% endfor %}
-    </ul>
+    <pre class="result">Predicted AQI : 
+    {% for each in prediction %}
+    {{ each }}
+    {% endfor %}
+    </pre>
     {% else %}
     <p class="page-placeholder">upload file to get prediction :)</p>
     {% endif %}
