@@ -17,6 +17,7 @@ Directory structure:
     ├── README.md
     ├── LICENSE
     ├── requirements.txt
+    ├── .gitattributes
     ├── Dockerfile
     ├── run.py
     ├── app/
@@ -52,7 +53,7 @@ Directory structure:
     │   │   ├── binary_encoder.joblib
     │   │   └── standard_scaler.joblib
     │   └── trained/
-    │       └── linear_regression_model.joblib
+    │       └── random_forest_regressor.joblib
     ├── notebooks/
     │   ├── 01_data_cleaning.ipynb
     │   ├── 02_eda.ipynb
