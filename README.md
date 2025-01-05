@@ -17,6 +17,7 @@ Directory structure:
     ├── README.md
     ├── LICENSE
     ├── requirements.txt
+    ├── Dockerfile
     ├── run.py
     ├── app/
     │   ├── __init__.py
