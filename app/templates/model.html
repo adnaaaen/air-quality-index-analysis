@@ -8,38 +8,55 @@
    </form>
 </div>
 
-<div class="container">
-   <h1>About model</h1>
-   <section>
-      <p>
-      This Random Forest Regressor model is designed to predict housing prices based on various features such as location, size, and age of the property. 
-      The dataset used is the <strong>Kaggle Housing Dataset</strong>, which contains 10,000 samples.
-      </p>
-   </section>
-<section>
-        <h3>Evaluation Metrics</h3>
-        <table>
-            <tr>
-                <th>Metric</th>
-                <th>Validation Set</th>
-                <th>Test Set</th>
-            </tr>
-            <tr>
-                <td class="highlight">MSE</td>
-                <td>12.45</td>
-                <td>14.78</td>
-            </tr>
-            <tr>
-                <td>R² Score</td>
-                <td>0.87</td>
-                <td>0.85</td>
-            </tr>
-        </table>
-    </section>
- <section>
-        <h3>Visualizations</h3>
-        <p>Below is a visualization of feature importance:</p>
-    </section>
+<div class="space-between-container">
+    <div class="container">
+        <h3>Overview</h3>
+            <ul>
+                <li>
+                    Model : <strong>Random Forest Regressor</strong>
+                </li>
+                <li>
+                    Type of Model : <strong>Supervised (regression)</strong>
+                </li>
+                <li>
+                    Best Params: 
+                    <ul>
+                        <li><strong>max_depth</strong>: 15</li>
+                        <li>
+                            <strong>min_samples_leaf</strong>: 2
+                        </li>
+                        <li>
+                            <strong>min_samples_split</strong>: 2
+                        </li>
+                        <li>
+                            <strong>n_estimators</strong>: 100 
+                        </li>
+                    </ul>
+            </ul>
+    </div>
+    <div class="container">
+            <h3>Evaluation Metrics</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>MAE</th>
+                    <th>MSE</th>
+                    <th>R² Score</th>
+                </tr>
+                <tr>
+                    <th>Train Set</th>
+                    <td>0.1856</td>
+                    <td>0.2063</td>
+                    <td>0.8521</td>
+                </tr>
+                <tr>
+                    <th>Test Set</th>
+                    <td>0.0693</td>
+                    <td>0.0852</td>
+                    <td>0.8180</td>
+                </tr>
+            </table>
+    </div>
 </div>
 {% endblock %}
 
