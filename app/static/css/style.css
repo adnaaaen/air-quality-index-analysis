@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
+:root {
+    --primary-color: #b0afae;
+    --secondary-color: #333231;
     scroll-behavior: smooth;
     height: 100%;
     font-family: "Poppins", serif;
@@ -10,7 +12,7 @@
     color: white;
 }
 
-footer{
+footer {
     letter-spacing: 2px;
     position: fixed;
     bottom: 0;
@@ -20,40 +22,41 @@ footer{
     text-align: center;
 }
 
-body{
+body {
     margin: 0;
 }
 
-.nav-bar{
+.nav-bar {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
-    border-bottom: 1px solid  rgb(49, 49, 49);
+    border-bottom: 1px solid rgb(49, 49, 49);
     padding: 10px;
     height: 30px;
     user-select: none;
 }
 
-.nav-bar nav{
+.nav-bar nav {
     width: 300px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.nav-link{
+.nav-link {
     color: rgba(255, 255, 255, 0.64);
     text-decoration: none;
     transition: 0.3s;
 }
 
-.nav-link:hover, .active{
+.nav-link:hover,
+.active {
     color: white;
     text-decoration: underline;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -63,7 +66,7 @@ body{
     margin-bottom: 10px;
 }
 
-.space-between-container{
+.space-between-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,7 +74,7 @@ body{
     margin-bottom: 40px;
 }
 
-.image-container{
+.image-container {
     user-select: none;
     border-radius: 50%;
     width: 270px;
@@ -79,7 +82,7 @@ body{
     transition: 0.3s;
 }
 
-.content{
+.content {
     display: flex;
     justify-content: center;
     margin-left: 200px;
@@ -90,7 +93,7 @@ body{
     flex-direction: column;
 }
 
-.page-title{
+.page-title {
     font-size: 30px;
     font-weight: 700;
     color: rgb(234, 232, 232);
@@ -99,7 +102,7 @@ body{
     user-select: none;
 }
 
-.primary-button{
+.primary-button {
     background-color: rgb(226, 224, 224);
     color: black;
     border-radius: 3px;
@@ -115,12 +118,29 @@ body{
     position: sticky;
 }
 
-.primary-button:hover{
+.primary-button:hover {
     background-color: rgb(253, 253, 253);
 
 }
 
-.page-placeholder{
+.page-placeholder {
     color: rgb(110, 109, 109);
     font-size: 22px;
+}
+
+.result {
+    color: white;
+    font-size: 25px;
+    font-weight: 700px;
+}
+
+
+th,
+td {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+tr {
+    background-color: var(--secondary-color);
 }

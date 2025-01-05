@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect
 
-app_bp = Blueprint('api', __name__)
+app_bp = Blueprint("api", __name__)
 
 
 @app_bp.route("/")
